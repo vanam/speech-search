@@ -210,7 +210,7 @@
   // Add service worker code
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('./service-worker.js')
+             .register('./sw.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
 })();

@@ -1,0 +1,22 @@
+{
+  "name": "speech-search",
+  "version": "1.0.0",
+  "description": "Search for keywords in an audio file containing speech or dialog",
+  "main": "scripts/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanam/speech-search.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanam/speech-search/issues"
+  },
+  "homepage": "https://github.com/vanam/speech-search#readme",
+  "devDependencies": {
+    "workbox-cli": "^3.0.0-beta.1"
+  }
+}

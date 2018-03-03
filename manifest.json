@@ -1,6 +1,7 @@
 {
   "name": "Speech Search",
-  "description": "Search for keywords in a sound file containing speech or dialog",
+  "short_name": "Speech Search",
+  "description": "Search for keywords in an audio file containing speech or dialog",
   "icons": [
     {
       "src": "images/icons/android-chrome-192x192.png",
