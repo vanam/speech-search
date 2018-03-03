@@ -205,7 +205,7 @@
       app.container.removeAttribute('hidden');
       app.isLoading = false;
     }
-  }, 100);
+  }, 1000);
 
   // Add service worker code
   if ('serviceWorker' in navigator) {
