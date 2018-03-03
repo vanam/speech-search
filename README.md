@@ -1,4 +1,5 @@
 # Speech Search
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 Search for keywords in an audio file containing speech or dialog.
 
@@ -28,31 +29,31 @@ Install dependencies using `npm install`.
 We are going to use [Workbox](https://developers.google.com/web/tools/workbox/) tool.
 
 1) Generate configuration file:
-```
-$ ./node_modules/workbox-cli/build/bin.js wizard
-? What is the root of your web app (i.e. which directory do you deploy)? Manually enter path
-? Please enter the path to the root of your web app: .
-? Which file types would you like to precache? svg, png, xml, ico, html, json, md, js, css
-? Where would you like your service worker file to be saved? sw.js
-? Where would you like to save these configuration options? workbox-config.js
-To build your service worker, run
+    ```
+    $ ./node_modules/workbox-cli/build/bin.js wizard
+    ? What is the root of your web app (i.e. which directory do you deploy)? Manually enter path
+    ? Please enter the path to the root of your web app: .
+    ? Which file types would you like to precache? svg, png, xml, ico, html, json, md, js, css
+    ? Where would you like your service worker file to be saved? sw.js
+    ? Where would you like to save these configuration options? workbox-config.js
+    To build your service worker, run
 
-  workbox generateSW workbox-config.js
+      workbox generateSW workbox-config.js
 
-as part of a build process. See https://goo.gl/fdTQBf for details.
-You can further customize your service worker by making changes to workbox-config.js. See https://goo.gl/gVo87N for details.
-```
+    as part of a build process. See https://goo.gl/fdTQBf for details.
+    You can further customize your service worker by making changes to workbox-config.js. See https://goo.gl/gVo87N for details.
+      ```
 
 2) Generate Service Worker:
-```
-$ ./node_modules/workbox-cli/build/bin.js generateSW workbox-config.js
-Using configuration from ./workbox-config.js.
-The service worker was written to sw.js
-20 files will be precached, totalling 204 kB.
-```
+    ```
+    $ ./node_modules/workbox-cli/build/bin.js generateSW workbox-config.js
+    Using configuration from ./workbox-config.js.
+    The service worker was written to sw.js
+    20 files will be precached, totalling 204 kB.
+    ```
 
 3) Manually remove unwanted files (since we are using super simple project structure)
 
-* `package-lock.json`
-* `package-lock`
-* `workbox-config.js`
+    * `package-lock.json`
+    * `package-lock`
+    * `workbox-config.js`
