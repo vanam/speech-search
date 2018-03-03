@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://speech-search.firebaseapp.com/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech Search</title>
+  <link rel="stylesheet" type="text/css" href="styles/inline.css">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Speech Search">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#3f51b5">
+  <link rel="shortcut icon" href="images/icons/favicon.ico">
+  <!-- Windows tiles -->
+  <meta name="msapplication-TileColor" content="#ececec">
+  <meta name="msapplication-config" content="images/icons/browserconfig.xml">
+  <!-- Android Splash and Switcher color -->
+  <meta name="theme-color" content="#ececec">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">Speech Search</h1>
+    <button id="butRecord" class="headerButton" aria-label="Record"></button>
+    <button id="butUpload" class="headerButton" aria-label="Upload"></button>
+  </header>
+
+  <main class="main" hidden>
+    <div class="card cardTemplate sound-search">
+      <p>Upload sound file or record voice.</p>
+      <!-- Display waveform placeholder until we have a sound file to search in. -->
+
+      <!-- Display waveform of a sound file. -->
+      <br>
+      <p>Select keywords to search for in a sound file.</p>
+      <label for="keywords">Keywords</label>
+      <input name="keywords" type="text" placeholder="keyword 1, keyword 2, ...">
+
+      <button id="butAnalyze" aria-label="Analyze">Analyze</button>
+    </div>
+  </main>
+
+  <div id="dialUpload" class="dialog-container">
+    <div class="dialog">
+      <div class="dialog-title">Upload sound file</div>
+      <div class="dialog-body">
+        <input type="file" id="inpUpload" accept="audio/*">
+      </div>
+      <div class="dialog-buttons">
+        <button id="butUploadSubmit" class="button">Upload</button>
+        <button id="butUploadCancel" class="button">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="dialRecord" class="dialog-container">
+    <div class="dialog">
+      <div class="dialog-title">Record sound</div>
+      <div class="dialog-body">
+        <div id="recordingControls">
+          <button id="butRecordStart" class="button">Start</button>
+          <button id="butRecordResume" class="button" hidden>Resume</button>
+          <button id="butRecordPause" class="button" hidden>Pause</button>
+          <button id="butRecordStop" class="button" hidden>Stop</button>
+        </div>
+        <audio id="recorded" controls hidden>
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="dialog-buttons">
+        <button id="butRecordSubmit" class="button" hidden>Done</button>
+        <button id="butRecordCancel" class="button">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="loader">
+    <svg viewBox="0 0 32 32" width="32" height="32">
+      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+  </div>
+
+  <!-- Uncomment the line below when ready to test with fake data -->
+  <script src="scripts/app.js" async></script>
+
+</body>
+</html>
