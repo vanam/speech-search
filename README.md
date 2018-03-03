@@ -12,9 +12,13 @@ Search for keywords in an audio file containing speech or dialog.
 ## Requirements:
 
 * Chrome >=64 (since we are using bleeding edge features)
-* npm >=5.7.1 (for development)
+* npm >=5.6 (for development)
 
-## Example usage
+## Demo
+
+[speech-search-e245f.firebaseapp.com/](https://speech-search-e245f.firebaseapp.com/)
+
+## Run locally
 
 You can run application using [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb) plugin
 
@@ -54,6 +58,28 @@ We are going to use [Workbox](https://developers.google.com/web/tools/workbox/) 
 
 3) Manually remove unwanted files (since we are using super simple project structure)
 
+    * `firebase.json`
     * `package-lock.json`
-    * `package-lock`
+    * `package.json`
     * `workbox-config.js`
+
+### Deployment to Firebase
+
+1) Install Firebase CLI
+    ```
+    npm install -g firebase-tools
+    ```
+
+2) Login to Firebase
+    ```
+    firebase login
+    ```
+
+2) Add more files/folders to ignore section in `firebase.json`
+
+3) Create new project if needed via [Firebase Console](https://console.firebase.google.com)
+
+4) Deploy to Firebase
+    ```
+    firebase deploy --project <projectId>
+    ```
