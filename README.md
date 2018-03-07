@@ -75,11 +75,16 @@ We are going to use [Workbox](https://developers.google.com/web/tools/workbox/) 
     firebase login
     ```
 
-2) Add more files/folders to ignore section in `firebase.json`
+3) Init Firebase project
+    ```
+    firebase init
+    ```
 
-3) Create new project if needed via [Firebase Console](https://console.firebase.google.com)
+4) Add more files/folders to ignore section in `firebase.json`
 
-4) Deploy to Firebase
+5) Create new project if needed via [Firebase Console](https://console.firebase.google.com)
+
+6) Deploy to Firebase
     ```
     firebase deploy --project <projectId>
     ```
