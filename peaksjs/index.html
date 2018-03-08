@@ -12,22 +12,28 @@
     <div id="controls-main-div">
       <div>
         <audio controls=controls >
-          <source id="mp3-source"  type="audio/mpeg">
-          <source id="ogg-source" type="audio/ogg">
+          <source id="mp3-source" src="test_data/sample.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
 
         <div id="controls">
           <div>
+        
             <button data-action="zoom-in">Zoom in</button>
             <button data-action="zoom-out">Zoom out</button>
             <button data-action="add-segment">Add a Segment at current time</button>
-            <button data-action="add-point">Add a Point at current time</button>
             &nbsp; &nbsp;
             <input type="text" id="seek-time" value="0.0">
             <button data-action="seek">Seek</button>
           </div>
+          
         </div>
+        <div id="segments">
+           <table id="segements-table">
+              <tbody></tbody>
+           </table>
+        </div>
+       
       </div>
     </div>
 

@@ -52,7 +52,8 @@ define('peaks', [
 
   function Peaks(container) {
     EventEmitter.call(this, { wildcard: true });
-
+    EventEmitter.defaultMaxListeners = 500;
+    
     this.options = {
 
       /**

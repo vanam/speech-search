@@ -10,6 +10,7 @@ module.exports = function (Colors, EventEmitter, WaveformPoints, WaveformSegment
     }
     function Peaks(container) {
         EventEmitter.call(this, { wildcard: true });
+        EventEmitter.defaultMaxListeners = 200;
         this.options = {
             zoomLevels: [
                 512,
