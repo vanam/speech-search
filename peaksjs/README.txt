@@ -6,5 +6,3 @@ spuštìní na localhostu
 4. spustit npm: "npm run start"
 5. stránka je dostupná na adrese http://localhost:9000/ 
 
-!! funguje jenom v prohlížeèi Google chrome 
-(chvilku trvá než se vizualizace naète)
