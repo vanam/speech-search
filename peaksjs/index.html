@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Peaks.js Demo Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body >
+    
+    <div id="waveform-visualiser-container"></div>
+
+    <div id="controls-main-div">
+      <div>
+        <audio controls=controls >
+          <source id="mp3-source"  type="audio/mpeg">
+          <source id="ogg-source" type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <div id="controls">
+          <div>
+            <button data-action="zoom-in">Zoom in</button>
+            <button data-action="zoom-out">Zoom out</button>
+            <button data-action="add-segment">Add a Segment at current time</button>
+            <button data-action="add-point">Add a Point at current time</button>
+            &nbsp; &nbsp;
+            <input type="text" id="seek-time" value="0.0">
+            <button data-action="seek">Seek</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <script src="js/peaks.js"></script>
+    <script src="js/app.js"> </script>
+  </body>
+</html>
