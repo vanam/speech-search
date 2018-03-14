@@ -13,7 +13,7 @@ Requirements:
 
 ## Obtaining IBM Cloud credentials
 1. register on [IBM Cloud](https://www.ibm.com/cloud/)
-2. navigate to [IBM Cloud Dashboard]https://console.bluemix.net/dashboard/apps/
+2. navigate to [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps/)
 3. browse services and find Speech-to-text service
 4. add service to your dashboard
 5. go back to dashboard and select created service
