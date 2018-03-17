@@ -1,19 +1,4 @@
-# Speech Search
-Search for keywords in a sound file containing speech or dialog
-
-## Installation
-
-Requirements:
-
-* Node.js v8.9.4
-* npm 5.6.0
-
-...
-
-## Configuration
-
-...
-
-## Example usage
-
-...
+1. `npm install`
+2. go to local/peaks.js/peaks.js and edit line 2201 set defaultMaxListeners 200 (now is 10) `KNOWN ISSUE`
+3. Start dev version` npm start`
+4. build release version `npm build`
