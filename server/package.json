@@ -1,0 +1,26 @@
+{
+  "name": "auth_server",
+  "main": "server.js",
+  "description": "Authentication server for IBM Watson Speech to text service",
+  "version": "0.1.1",
+  "private": false,
+  "engines": {
+    "node": "6.*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IBM-Bluemix/get-started-node"
+  },
+  "dependencies": {
+    "cfenv": "^1.0.x",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.x",
+    "watson-developer-cloud": "^3.2.1"
+  },
+  "author": "Michal Veverka",
+  "license": ""
+}
