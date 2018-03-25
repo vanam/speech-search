@@ -316,6 +316,7 @@ class App extends Component {
                                     <Button id="new-keyword-button" type='submit' onClick={this.addKeyword} size='mini'>Add</Button>
                                 </Input>
                                 <Button icon size='mini' id="search-keywords-button" onClick={this.searchForKeywords} labelPosition='left' ><Icon name='search'/>Search for keywords</Button>
+                                <div style={{clear: 'both'}}></div>
                             </Segment>
                             <Segment color="brown" style={{display: (recordingLength > 0 && this.state.segments[this.activeRecording].length > 0) ? 'block' : 'none'}}>
                                 <Table celled>
