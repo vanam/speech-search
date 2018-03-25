@@ -261,7 +261,7 @@ class App extends Component {
 
         return (
             <div className="App">
-                <header><h1>Integration project</h1></header>
+                <header><h1>Speech Search</h1></header>
                 <Segment.Group id="int-wrapper">
                     <Segment.Group id="user-input">
                         <Segment>
