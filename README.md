@@ -33,7 +33,7 @@ Application frontend is located in build folder (after running `npm build`) and 
 
 Keep in mind, that you need to set correct `homepage` (in `package.json`) before you build your App. 
 
-Otherwise application will fail to load static files or attribute `homepage` remove if app is hosted at the server root.
+Otherwise application will fail to load static files. Or attribute `homepage` remove if app is hosted at the server root.
 
 Example:
 ```js
