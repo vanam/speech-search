@@ -23,7 +23,8 @@ Search for keywords in an audio file containing speech or dialog.
 ## Build
 
 1. Install dependencies using `npm install`
-3. Build release version using `npm build`
+2. Build release version using `npm build` (set `homepage` in `package.json`)
+3. (Optional) In order to run build version on localhost set `"homepage": "/"` in `package.json` and run it `serve -s build`
 
 ## Deployment
 
@@ -31,7 +32,7 @@ Search for keywords in an audio file containing speech or dialog.
 
 Application frontend is located in build folder (after running `npm build`) and contains static files ready to be deployed.
 
-Keep in mind, that you need to set correct `homepage` (in `package.json`) before you build your App. 
+Keep in mind, that you need to set correct `homepage` (in `package.json`) before you build your App.
 
 Otherwise application will fail to load static files. Or attribute `homepage` remove if app is hosted at the server root.
 
