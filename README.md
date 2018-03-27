@@ -44,4 +44,4 @@ Also if you want to use the advantage of Service Workers and serve your applicat
 
 #### Watson Service
 
-Application also needs small service in order to work, which is responsible for .. TODO Michal .. and is located in server folder.
+Application also needs small service in order to work, which is responsible for obtaining IBM Watson Authentication token and is located in server folder.
