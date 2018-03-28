@@ -9,7 +9,7 @@ class SpeechToTextService {
 
     static _httpGetToken() {
         let xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", 'http://authserver-balanced-rabbit.eu-gb.mybluemix.net/getToken', false); // false for synchronous request
+        xmlHttp.open("GET", 'https://authserver-balanced-rabbit.eu-gb.mybluemix.net/getToken', false); // false for synchronous request
         xmlHttp.send( null );
         return xmlHttp.responseText;
     }
